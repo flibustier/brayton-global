@@ -41,8 +41,8 @@
         </div>
       -->
 
-        <el-row class="animate-box">
-          <el-col :span="5" v-for="(o, index) in team" :key="o" :offset="2" style="margin-bottom: 50px">
+        <el-row class="animate-box" :gutter="20">
+          <el-col :xs="{span: 16, offset:4}" :sm="{span: 9, offset: 2}" :md="{span: 4, offset: 3}" :lg="{span: 5, offset: 1}" v-for="(o, index) in team" :key="o" style="margin-bottom: 50px">
             <el-card :body-style="{ padding: '10px' }">
               <img :src="img" class="image">
               <div style="padding: 14px;">
@@ -82,7 +82,13 @@
   }
 </script>
 
-<style>
+<style scoped>
+  @media screen and (min-width: 1200px) {
+      .el-row {
+          margin-right: 2em !important;
+      }
+  }
+
   .time {
     font-size: 13px;
     color: #999;
