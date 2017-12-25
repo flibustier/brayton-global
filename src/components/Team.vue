@@ -1,64 +1,24 @@
 <template>
   <div>
-    <intro headline="Our Team" :image="introImage"/>
+    <intro headline="Our Team" image="ux_intro.jpg"/>
 
-
-
-        <!--
-        <div class="row">
-          <div class="col-md-4 col-md-push-4 animate-box">
-            <div class="text-left">
-              <h3>Frederic De Boom</h3>
-              <span>Founder & CEO</span>
-              <p>
-                <span>Email: frederic@braytonglobal.com</span>
-              </p>
+    <el-row class="animate-box" :gutter="20">
+      <el-col :xs="{span: 16, offset:4}" :sm="{span: 9, offset: 2}" :md="{span: 5, offset: 2}" :lg="{span: 5, offset: 1}" v-for="o in team" :key="o" style="margin-bottom: 50px">
+        <el-card :body-style="{ padding: '10px' }">
+          <img :src="imagePath(o.picture)" class="image" :alt="o.picture">
+          <div style="padding: 14px;">
+            <span>{{ o.name }}</span>
+            <div class="bottom clearfix">
+              <span>{{ o.position }}</span><br/><br/>
+              <span style="font-size: 0.7em"><i class="icon-email"></i> {{ o.email }}</span><br/>
+              <a class="button" :href="o.linkedin">
+                <i class="icon-linkedin2"></i>
+              </a>
             </div>
           </div>
-          <div class="col-md-2 col-md-pull-3 animate-box">
-            <figure>
-              <a href="#"><img class="img-responsive" src="../assets/images/fred.png" alt="Frédéric De Boom"></a>
-            </figure>
-          </div>
-        </div>
-
-        <div class="row margTop3em">
-          <div class="col-md-4 col-md-push-4 animate-box">
-            <div class="text-left">
-              <h3>Jon Snow</h3>
-              <span>CTO</span>
-              <p>
-                <span><i class="icon-email"></i> jon@braytonglobal.com</span><br/>
-
-              </p>
-            </div>
-          </div>
-          <div class="col-md-2 col-md-pull-3 animate-box">
-            <figure>
-              <a href="#"><img class="img-responsive" src="../assets/img/team/jon.min.jpg" alt="Frédéric De Boom"></a>
-            </figure>
-          </div>
-        </div>
-      -->
-
-        <el-row class="animate-box" :gutter="20">
-          <el-col :xs="{span: 16, offset:4}" :sm="{span: 9, offset: 2}" :md="{span: 4, offset: 3}" :lg="{span: 5, offset: 1}" v-for="(o, index) in team" :key="o" style="margin-bottom: 50px">
-            <el-card :body-style="{ padding: '10px' }">
-              <img :src="img" class="image">
-              <div style="padding: 14px;">
-                <span>{{ o.name }}</span>
-                <div class="bottom clearfix">
-                  <span>{{ o.position }}</span><br/><br/>
-                  <span style="font-size: 0.7em"><i class="icon-email"></i> {{ o.email }}</span><br/>
-                  <a class="button" :href="o.linkedin">
-                    <i class="icon-linkedin2"></i>
-                  </a>
-                </div>
-              </div>
-            </el-card>
-          </el-col>
-        </el-row>
-{{ img }}
+        </el-card>
+      </el-col>
+    </el-row>
   </div>
 
 </template>
@@ -72,11 +32,13 @@
       intro
     },
 
+    methods: {
+        imagePath: (name) => require('../assets/img/team/' + name)
+    },
+
     data: function () {
       return {
-        'introImage': "ux_intro.jpg",
-        'team': team,
-        'img': require('../assets/img/team/jon.min.jpg')
+        'team': team
       }
     }
   }
@@ -87,11 +49,6 @@
       .el-row {
           margin-right: 2em !important;
       }
-  }
-
-  .time {
-    font-size: 13px;
-    color: #999;
   }
 
   .bottom {

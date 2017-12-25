@@ -1,44 +1,65 @@
 [
   {
+    "name": "Frederic De Boom",
+    "picture": "fred.jpg",
+    "position": "Founder & CEO",
+    "email": "frederic@braytonglobal.com",
+    "linkedin": "https://www.linkedin.com/in/frederic-de-boom-lion-68b7846/"
+  },
+  {
     "name": "Jon Snow",
-    "picture": "../assets/team/jon.min.jpg",
+    "picture": "jon.min.jpg",
     "position": "CTO",
     "email": "jon@braytonglobal.com",
     "linkedin": "https://www.linkedin.com/in/jplatteau/"
   },
   {
-    "name": "Jon Snow",
-    "picture": "../assets/team/jon.min.jpg",
-    "position": "CTO",
-    "email": "jon@braytonglobal.com",
+    "name": "Antonela Santilli",
+    "picture": "antonela.jpg",
+    "position": "Office Manager",
+    "email": "antonela@braytonglobal.com",
+    "linkedin": "https://www.linkedin.com/in/maria-antonela-santilli-437857b0/"
+  },
+  {
+    "name": "Muriel De Boom",
+    "picture": "jon.min.jpg",
+    "position": "HR Manager",
+    "email": "muriel@braytonglobal.com",
     "linkedin": "https://www.linkedin.com/in/jplatteau/"
   },
   {
-    "name": "Jon Snow",
-    "picture": "../assets/team/jon.min.jpg",
-    "position": "CTO",
-    "email": "jon@braytonglobal.com",
+    "name": "Steve Huyge",
+    "picture": "jon.min.jpg",
+    "position": "Sales Manager",
+    "email": "steve@braytonglobal.com",
     "linkedin": "https://www.linkedin.com/in/jplatteau/"
   },
   {
-    "name": "Jon Snow",
-    "picture": "../assets/team/jon.min.jpg",
-    "position": "CTO",
-    "email": "jon@braytonglobal.com",
+    "name": "Melis Erenoglu",
+    "picture": "jon.min.jpg",
+    "position": "IT Recruiter",
+    "email": "melis@braytonglobal.com",
     "linkedin": "https://www.linkedin.com/in/jplatteau/"
   },
   {
-    "name": "Jon Snow",
-    "picture": "../assets/team/jon.min.jpg",
-    "position": "CTO",
-    "email": "jon@braytonglobal.com",
+    "name": "Nahed El Khamkhami",
+    "picture": "jon.min.jpg",
+    "position": "Junior IT Recruiter",
+    "email": "nahed@braytonglobal.com",
     "linkedin": "https://www.linkedin.com/in/jplatteau/"
   },
   {
-    "name": "Jon Snow",
-    "picture": "../assets/team/jon.min.jpg",
-    "position": "CTO",
-    "email": "jon@braytonglobal.com",
+    "name": "Imane Akhiyat",
+    "picture": "jon.min.jpg",
+    "position": "Junior IT Recruiter",
+    "email": "imane@braytonglobal.com",
+    "linkedin": "https://www.linkedin.com/in/jplatteau/"
+  },
+  {
+    "name": "Sohret Erenoglu",
+    "picture": "jon.min.jpg",
+    "position": "Office assistant",
+    "email": "sohret@braytonglobal.com",
     "linkedin": "https://www.linkedin.com/in/jplatteau/"
   }
 ]
