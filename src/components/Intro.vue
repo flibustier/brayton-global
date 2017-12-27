@@ -1,7 +1,7 @@
 <template>
   <div id="brg-intro-section" class="animate-box" data-animate-effect="fadeIn">
     <div class="brg-intro-cover text-center" data-stellar-background-ratio="0.5"
-    v-bind:style="{ 'background-image': 'url(http://www.braytonglobal.com/images/' + image + ')' }">
+    :style="{ backgroundImage: 'url(' + imagePath(image) + ')' }">
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 float-overlay">
@@ -15,7 +15,11 @@
 
 <script>
   export default {
-    props: ['headline', 'image']
+    props: ['headline', 'image'],
+
+    methods: {
+      imagePath: (name) => require('../assets/img/cover/' + name)
+    },
   }
 </script>
 

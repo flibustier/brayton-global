@@ -1,6 +1,6 @@
 <template>
   <div>
-    <intro headline="Partnership" :image="introImage"></intro>
+    <intro headline="Partnership" image="partners.jpg"></intro>
 
     <div id="brg-section">
       <div class="container">
@@ -39,12 +39,6 @@
       intro,
       shortcut
     },
-
-    data: function () {
-      return {
-        'introImage': "partners.jpg"
-      }
-    }
   }
 </script>
 

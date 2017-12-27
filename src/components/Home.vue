@@ -1,6 +1,6 @@
 <template>
   <div>
-    <intro headline="" :image="introImage"></intro>
+    <intro headline="" image="brg_intro.jpg"></intro>
 
     <div id="brg-media-section">
       <div class="container">
@@ -20,7 +20,7 @@
             <div id="cover0" class="brg-cover">
               <div class="desc">
                 <p>We are looking for you! Available Positions at :</p>
-                <span><a href="#" class="TFFF" v-on:click="test">Brayton Hub</a></span>
+                <span><a href="#" class="TFFF">Brayton Hub</a></span>
               </div>
             </div>
           </div>
@@ -62,18 +62,6 @@
     components: {
       intro
     },
-
-    data: function () {
-      return {
-        introImage: "brg_intro.jpg"
-      }
-    },
-
-    methods: {
-      test: function () {
-        this.introImage = "partners.jpg"
-      }
-    }
   }
 </script>
 
