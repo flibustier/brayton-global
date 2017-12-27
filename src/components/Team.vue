@@ -9,8 +9,13 @@
           <div style="padding: 14px;">
             <span>{{ o.name }}</span>
             <div class="bottom clearfix">
-              <span>{{ o.position }}</span><br/><br/>
-              <span style="font-size: 0.7em"><i class="icon-email"></i> {{ o.email }}</span><br/>
+              <span class="position">
+                  {{ o.position }}
+              </span>
+                <br/>
+                <a class="email" :href="'mailto:' + o.email" :title="o.email">
+                    <i class="icon-email"></i>
+                </a>
               <a class="button" :href="o.linkedin">
                 <i class="icon-linkedin2"></i>
               </a>
@@ -51,14 +56,25 @@
       }
   }
 
+  .position {
+      font-size: 0.85em;
+  }
+
+  .email {
+      padding: 0;
+      float: left;
+      margin-top: 20px;
+  }
+
   .bottom {
-    margin-top: 13px;
+    margin-top: 14px;
     line-height: 12px;
   }
 
   .button {
     padding: 0;
     float: right;
+    margin-top: 20px;
   }
 
   .image {
