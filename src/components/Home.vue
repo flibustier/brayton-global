@@ -4,36 +4,35 @@
 
     <div id="brg-media-section">
       <div class="container">
-        <div class="row animate-box">
-          <div class="col-md-8 col-md-offset-2 text-center heading-section">
-            <h3>Brayton Global</h3>
-            <p>
-              At <span class="TDD7520"><b>Brayton Global</b></span>,
-              we’re committed to providing first-in-class ICT, audit,
-              consultancy services to our public and private clients
-              in Belgium and internationally.
-            </p>
-          </div>
+        <div class="row col-md-8 col-md-offset-2 heading-section">
+          <p>
+            At <b>Brayton Global</b>,
+            we’re committed to providing first-in-class ICT, audit,
+            consultancy services to our public and private clients
+            in Belgium and internationally.
+          </p>
         </div>
         <div class="row">
-          <div class="col-md-7 animate-box">
+          <div class="col-md-7">
             <div id="cover0" class="brg-cover">
               <div class="desc">
                 <p>We are looking for you! Available Positions at :</p>
-                <span><a href="#" class="TFFF">Brayton Hub</a></span>
+                <router-link to="/jobs">
+                  <span>Brayton Hub</span>
+                </router-link>
               </div>
             </div>
           </div>
-          <div class="col-md-5 animate-box">
+          <div class="col-md-5">
             <div class="brg-cover">
 
               <div class="brg-cover-hero">
                 <div id="cover2" class="brg-cover-thumb"></div>
                 <div class="desc-thumb">
                   <p>Eu Talent Service</p>
-                  <a class="TFFF"  href="hub_index.html">
-                      <span>Brayton Hub</span>
-                  </a>
+                  <router-link to="/hub">
+                    <span>Brayton Hub</span>
+                  </router-link>
                 </div>
               </div>
 
@@ -41,9 +40,9 @@
                 <div id="cover3" class="brg-cover-thumb"></div>
                 <div class="desc-thumb">
                   <p>Consultancy</p>
-                  <a class="TFFF"  href="it_strategy.html">
-                      <span>I.T. Strategy</span>
-                  </a>
+                  <router-link to="/strategy">
+                    <span>IT Strategy</span>
+                  </router-link>
                 </div>
               </div>
 
@@ -65,7 +64,7 @@
   }
 </script>
 
-<style>
+<style scoped>
   #cover0 {
     background-image: url('../assets/images/sm_preview.png');
   }
@@ -76,5 +75,14 @@
 
   #cover3 {
     background-image: url('../assets/images/consult_preview.png');
+  }
+
+  h3, b {
+    color: #DD7520;
+  }
+
+  .heading-section {
+    margin-bottom: 2em;
+    height: 150px;
   }
 </style>

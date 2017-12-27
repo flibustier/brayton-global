@@ -23,7 +23,7 @@
                     Recruitment <span class="caret"></span>
                   </span>
                   <span class="col-xs-12 dropdown-menu">
-                    <router-link to="/hub_index">
+                    <router-link to="/hub">
                       <span class="col-xs-12">Brayton Hub</span>
                     </router-link>
                     <router-link to="/partners">

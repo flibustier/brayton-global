@@ -2,28 +2,39 @@
   <div>
     <intro headline="Our Team" image="ux_intro.jpg"/>
 
-    <el-row class="animate-box" :gutter="20">
-      <el-col :xs="{span: 16, offset:4}" :sm="{span: 9, offset: 2}" :md="{span: 5, offset: 2}" :lg="{span: 5, offset: 1}" v-for="o in team" :key="o" style="margin-bottom: 50px">
-        <el-card :body-style="{ padding: '10px' }">
-          <img :src="imagePath(o.picture)" class="image" :alt="o.picture">
-          <div style="padding: 14px;">
-            <span>{{ o.name }}</span>
-            <div class="bottom clearfix">
-              <span class="position">
-                  {{ o.position }}
-              </span>
-                <br/>
-                <a class="email" :href="'mailto:' + o.email" :title="o.email">
-                    <i class="icon-email"></i>
-                </a>
-              <a class="button" :href="o.linkedin">
-                <i class="icon-linkedin2"></i>
-              </a>
-            </div>
-          </div>
-        </el-card>
-      </el-col>
-    </el-row>
+      <el-row :gutter="20">
+        <transition-group name="custom-classes-transition"
+        enter-active-class="animated fadeInUp"
+        appear>
+          <el-col :xs="{span: 16, offset:4}" :sm="{span: 9, offset: 2}"
+          :md="{span: 5, offset: 2}" :lg="{span: 5, offset: 1}"
+          v-for="(o, index) in team" :key="o" style="margin-bottom: 50px">
+
+            <el-card :body-style="{ padding: '10px' }">
+              <img :src="imagePath(o.picture)" class="image" :alt="o.picture">
+              <div style="padding: 14px;">
+                <span>{{ o.name }}</span>
+                <div class="bottom clearfix">
+                  <span class="position">
+                    {{ o.position }}
+                  </span>
+                  <br/>
+                  <el-tooltip class="item" effect="light" :content="o.email"
+                  placement="bottom">
+                    <a class="email" :href="'mailto:' + o.email">
+                      <i class="icon-email"></i>
+                    </a>
+                  </el-tooltip>
+                  <a class="button" :href="o.linkedin">
+                    <i class="icon-linkedin2"></i>
+                  </a>
+                </div>
+              </div>
+            </el-card>
+          </el-col>
+        </transition-group>
+      </el-row>
+
   </div>
 
 </template>
