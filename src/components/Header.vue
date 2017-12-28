@@ -50,7 +50,9 @@
                   </span>
                 </div>
               </li>
-              <li id="Jobs"><a href="">Jobs</a></li>
+              <li id="Jobs">
+                <router-link to="/jobs">Jobs</router-link>
+              </li>
               <li>
                 <div class="dropdown">
                   <span class="dropdown-toggle" data-toggle="dropdown">
