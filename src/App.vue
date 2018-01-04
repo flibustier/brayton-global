@@ -1495,7 +1495,7 @@ input[type="text"] {
         background-image: url(./assets/images/vms_preview.png) !important;
     }
     #cover2 {
-        background-image: url(./assets/images/hub_preview.png) !important;
+        background-image: url(./assets/img/cover/hub_preview.png) !important;
     }
     #cover3 {
         background-image: url(./assets/images/consult_preview.png) !important;

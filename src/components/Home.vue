@@ -70,7 +70,7 @@
   }
 
   #cover2 {
-    background-image: url('../assets/images/hub_preview.png');
+    background-image: url('../assets/img/cover/hub_preview.png');
   }
 
   #cover3 {
