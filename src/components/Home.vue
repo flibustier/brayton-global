@@ -66,7 +66,7 @@
 
 <style scoped>
   #cover0 {
-    background-image: url('../assets/images/sm_preview.png');
+    background-image: url('../assets/img/sm_preview.png');
   }
 
   #cover2 {
@@ -74,7 +74,7 @@
   }
 
   #cover3 {
-    background-image: url('../assets/images/consult_preview.png');
+    background-image: url('../assets/img/consult_preview.png');
   }
 
   h3, b {

@@ -169,7 +169,7 @@
               </table>
             </div>
             <div class="col-md-10 fSize65 col-md-offset-1 text-justify margBot3em">
-              <blockquote class="animate-box">
+              <blockquote>
                 <p>
                   " Our competences are leveraged over several vertical industries and
                   horizontal service-lines, guaranteeing the best selection process

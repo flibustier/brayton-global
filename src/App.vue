@@ -1498,7 +1498,7 @@ input[type="text"] {
         background-image: url(./assets/img/cover/hub_preview.png) !important;
     }
     #cover3 {
-        background-image: url(./assets/images/consult_preview.png) !important;
+        background-image: url(./assets/img/consult_preview.png) !important;
     }
 
     .brg-cover .brg-cover-hero .desc-thumb p {
