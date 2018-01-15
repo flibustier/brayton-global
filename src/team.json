@@ -7,13 +7,6 @@
     "linkedin": "https://www.linkedin.com/in/frederic-de-boom-lion-68b7846/"
   },
   {
-    "name": "Jon Snow",
-    "picture": "jon.min.jpg",
-    "position": "CTO",
-    "email": "jon@braytonglobal.com",
-    "linkedin": "https://www.linkedin.com/in/jplatteau/"
-  },
-  {
     "name": "Antonela Santilli",
     "picture": "antonela.jpg",
     "position": "Office Manager",
@@ -35,11 +28,11 @@
     "linkedin": "https://www.linkedin.com/in/stevehuyge/"
   },
   {
-    "name": "Melis Erenoglu",
-    "picture": "melis.jpg",
-    "position": "IT Recruiter",
-    "email": "melis@braytonglobal.com",
-    "linkedin": "https://www.linkedin.com/in/melis-erenoglu-66a346144/"
+    "name": "Jon Snow",
+    "picture": "jon.min.jpg",
+    "position": "CTO",
+    "email": "jon@brayton-global.co.uk",
+    "linkedin": "https://www.linkedin.com/in/jplatteau/"
   },
   {
     "name": "Nahed El Khamkhami",
@@ -54,6 +47,20 @@
     "position": "Junior IT Recruiter",
     "email": "imane@braytonglobal.com",
     "linkedin": "https://www.linkedin.com/in/imane-akhiyat-640856152/"
+  },
+  {
+    "name": "Ibtissam Marsou",
+    "picture": "ibitssam.jpg",
+    "position": "Junior IT Recruiter",
+    "email": "sam@braytonglobal.com",
+    "linkedin": "https://www.linkedin.com/in/ibtissam-marsou-6b1004151/"
+  },
+  {
+    "name": "Melis Erenoglu",
+    "picture": "melis.jpg",
+    "position": "IT Recruiter",
+    "email": "melis@braytonglobal.com",
+    "linkedin": "https://www.linkedin.com/in/melis-erenoglu-66a346144/"
   },
   {
     "name": "Sohret Erenoglu",

@@ -10,7 +10,7 @@
           :md="{span: 5, offset: 2}" :lg="{span: 5, offset: 1}"
           v-for="(o, index) in team" :key="o" style="margin-bottom: 50px">
 
-            <el-card :body-style="{ padding: '10px' }">
+            <el-card :body-style="{ padding: '0px' }">
               <img :src="imagePath(o.picture)" class="image" :alt="o.picture">
               <div style="padding: 14px;">
                 <span>{{ o.name }}</span>
